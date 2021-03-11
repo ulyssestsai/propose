@@ -14,52 +14,194 @@
                 background-size: cover;
                 background-repeat: no-repeat;
             }
+
+            #first, #second ,#talk,#marryme{
+                display: block;
+                width: 900px;
+                height: 600px;
+                padding: 40px 60px;
+                background-color: rgba(255, 248, 220, .5);
+                border-radius: 10px;
+                box-shadow: 0 2px 6px rgb(0 0 0 / 10%);
+                color: rgb(102, 102, 102);
+                text-shadow: 0 2px 2px rgb(0 0 0 / 10%);
+                font-family: 'Courier New', Courier, monospace, "STSong";
+                letter-spacing: -1px;
+                line-height: 100px;
+            }
+            #first h1{
+               font-size: 48px;
+            }
+
+            #first h2 {
+                font-size: 28px;
+                /* line-height: 200px; */
+            }
+
+            #first h3,p{
+                display: inline-block;
+                margin-top: 100px;
+                font-size: 100px;
+            }
+            #first h3{
+                margin-left: 100px;
+                font-size:200px;
+            } 
+
+            #second h1{
+                font-size: 48px;
+            }
+
+            #second p{
+                /* font-size: 150px; */
+            }
+            
+            #firstyear img{
+                margin-left: -100px;
+            }
+
+            p.merry{
+                display: inline-block;
+                font-size: 30px;
+                left: auto;
+                position: fixed;
+                margin-left: 30px;
+                white-space: nowrap;
+            }
+
+            p.sky{
+                margin-top: 0;
+                font-size: 20px;
+                display: block;
+                line-height: 30px;
+            }
+            
+            p.family{
+                font-size: 20px;
+                top: auto;
+                /* position: relative; */
+                margin-top:0 ;
+                margin-left: 5px;
+                
+            }
+
+            p.birthday{
+                margin-top: 0px;
+                font-size: 20px;
+                display: inline-block;
+            }
+
+            p.talk{
+                margin-top: auto;
+                line-height: 40px;
+                font-size: 24px;
+                word-wrap: break-word;
+            }
+
+            p.all{
+                margin-top: auto;
+                font-size: 24px;
+            }
+
+            p.marryme{
+                font-size: 50px;
+                color: black;
+
+            }
+            
+           
+
+
         </style>
     </head>
 <body>
-    <div id="impress">
-        <div id="first" class="step" data-x="0" data-y="0">
-            <h2>propose</h2>
-            <p>4565 <br>
-               654 <br>
-            </p>
-            <img src="start.jpg" width="623" height="375" alt="">
+    <audio autoplay controls loop>
+        <source src="../propose/music/Jason Derulo - Marry Me (Lyrics).mp3" type="audio/ogg">
+        <source src="../propose/music/" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <div id="impress" 
+        data-transition-duration="1000" 
+        data-width="1024"
+        data-height="768"
+        data-max-scale="3"
+        data-min-scale="0"
+        data-perspective="1000">
+        <div id="first" class="step" data-x="-1500" data-y="-1500" data-z="-1500">
+            <h1>Do you know</h1>
+            <h2>I have been thinking about this thing for three months.</h2>
+            <p>about</p><h3>Us</h3>
         </div>
 
-        <div id="second" class="step" data-x="1100" data-y="1200" data-scale="1.8" data-rotate="190">
-            <h2>propose1</h2>
-            <p>4565 <br>
-               654 <br>
-            </p>
-            <img src="start.jpg" width="623" height="375" alt="">            
+        <div id="second" class="step" data-x="-1500" data-y="-1500" data-z="0" data-scale="3">
+            <h1>Let us</h1>
+            <p>Retrospect</p>
+            
         </div>
 
-        <div id="third" class="step" data-x="-900" data-y="2500" data-rotate="180">
-            <h2>propose2</h2>
-            <p>4565 <br>
-               654 <br>
-            </p>
-            <img src="start.jpg" width="623" height="375" alt="">
+        <div id="firstyear" class="step" data-x="0" data-y="0" data-scale="2" >
+            <img classs="merryimg" src="../propose/photo/IMG_5384.JPG" width="500" height="325" alt="">
+            <p class="merry">2016 x'mas First dating</p>           
         </div>
 
-        <div id="intro1" class="step" data-x="-1200" data-y="1000" data-scale="0.8" data-rotate="270">
-            <h2>propose3</h2>
-            <p>4565 <br>
-               654 <br>
-            </p>
-            <img src="start.jpg" width="623" height="375" alt="">
+        <div id="promise" class="step" data-x="850" data-y="5000" data-z="-2000" data-rotate="90" data-scale="2">
+            <img src="../propose/photo/IMG_5385.JPG" width="450" height="400" alt="">
+            <p class="sky">Sky lantern</p>
+            <p class="sky">寫在天燈上的願望都一一達成了</q>
+            <p class="sky" >接下來，承諾你的我也會盡力完成</p>
         </div>
 
-        <div id="intro2" class="step" data-x="-700" data-y="599" data-scale="0.2" data-rotate="270">
-            <h2>propose4</h2>
-            <p>4565 <br>
-               654 <br>
-            </p>
-            <img src="start.jpg" width="623" height="375" alt="">
+        <div id="family" class="step" data-x="3500" data-y="2100"  data-scale="3" data-rotate="180">
+            <img src="../propose/photo/IMG_5388.jpg" width="423" height="575" alt="">
+            <p class="family">2017 Summer</p>
         </div>
 
-        <!-- <div id="overview" class="step" data-x="700" data-y="-100" data-z="1000" data-scale="1" style="pointer-events: none;">
-        </div> -->
+        <div id="birthday" class="step" data-x="3500" data-y="-850" data-scale="2" data-rotate="270">
+            <img src="../propose/photo/IMG_5389.JPG" width="523" height="675" alt="">
+            <p class="birthday">謝謝妳這一路的陪伴，我想也是時候開啟下一個篇章囉</p>
+        </div>
+
+        <div id="kor" class="step" data-x="2825" data-y="2325" data-z="-3000" data-scale="1" data-rotate="300">
+            <img src="../propose/photo/IMG_5390.JPG" width="475" height="675" alt="">
+        </div>
+
+        <div id="talk" class="step" data-x="2725" data-y="1325" data-z="-2800" data-scale="1" data-rotate="300">
+            <p class="talk">我不知道未來會怎麼樣，但我會盡力為未來準備。<br>
+                            我也不知道我會不會是個稱職的丈夫或者父親，但我會努力學。<br>
+                            <br>
+                            或許妳心中還有很多想做的事或未完成的事，但妳放心這些事並不會因為我們關係的不一樣而成為妳心中遺憾。<br>        
+                            或許妳會說身份不一樣了不能再只考慮到自己。<br>
+                            <br>
+                            想做什麼就去做我們的關係不足以扼殺你的夢想，就算發生什麼事也別擔心<br>
+                            <br>
+                            因為<br>
+                            <br>
+                            <br>
+                            還有我在呢<br>
+                            ❤                                              
+            </p>
+            
+        </div>
+
+        <div id="all" class="step" data-x="6300" data-y="2500" data-rotate="20" data-scale="2">
+            <img src="../propose/photo/IMG_5392.JPG" width="800" height="575" alt="">
+            <p class="all">在一起這段時間總是發生一些不可思議又有趣的事 <br>
+                我已經準備好非妳不娶了，你呢？<br>
+
+            </p>
+        </div>
+
+         <div id="us" class="step" data-x="3000" data-y="1500" data-z="1500"  data-scale="5" data-rotate="360">
+             <img src="../propose/photo/IMG_0590.JPG" width="1000" height="700" alt="">
+        </div> 
+        <div id="marryme" class="step" data-x="3000" data-y="1500" data-z="8000" data-scale="9" data-rotate="720">
+            <p class="marryme"> Would you be my wife ? <br>
+                <br>
+                I want to be with you forever. <br>
+            </p>
+        </div>
+
 
 
     </div>
